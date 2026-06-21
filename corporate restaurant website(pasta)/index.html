@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Pasta | Artisan Italian Kitchen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="site-navigation" id="mainNav">
+        <div class="nav-container">
+            <a href="#" class="brand-logo">Bella<span class="accent-dot">Pasta</span></a>
+            <div class="navigation-links">
+                <a href="#home" class="nav-anchor active-route">Home</a>
+                <a href="#story" class="nav-anchor">Our Story</a>
+                <a href="#menu" class="nav-anchor">Menu</a>
+                <a href="#contact" class="nav-anchor">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="view-stage">
+        <div class="stage-overlay"></div>
+        <div class="stage-content">
+            <span class="stage-sub">EST. 1998 • ROME</span>
+            <h1 class="stage-title">Mastering the Art of Pasta</h1>
+            <a href="#menu" class="action-trigger">Explore Menu</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="story" class="scroll-trigger-view">
+            <div class="container layout-split">
+                <div class="column-text">
+                    <h2 class="section-headline">Our Story</h2>
+                    <h3 class="sub-headline">Crafting Joy Since 1998</h3>
+                    <p class="paragraph-lead">Every dish tells a story of tradition, passion, and fresh ingredients. Located in the heart of the city, Bella Pasta brings the authentic flavors of Rome and Tuscany directly to your plate.</p>
+                    <p class="paragraph-muted">Our pasta is rolled by hand daily using premium Semolina flour and organic eggs, paired with slow-simmered sauces crafted from imported San Marzano tomatoes.</p>
+                </div>
+                <div class="column-media">
+                    <figure class="frame-wrapper">
+                        <img src="img/pasta.jpg" alt="Artisan pasta making process" class="fluid-img">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="scroll-trigger-view">
+            <div class="container">
+                <h2 class="section-headline centered">Our Menu</h2>
+                
+                <div class="catalog-filter-wrapper">
+                    <button class="filter-node active" data-target="all">All Dishes</button>
+                    <button class="filter-node" data-target="classic">Classics</button>
+                    <button class="filter-node" data-target="special">Chef's Special</button>
+                </div>
+
+                <div class="catalog-grid">
+                    <div class="catalog-card" data-group="classic">
+                        <div class="card-header">
+                            <h4 class="plate-title">Spaghetti Carbonara</h4>
+                            <span class="plate-price">$18</span>
+                        </div>
+                        <p class="plate-desc">Egg yolk, guanciale, pecorino romano, cracked black pepper</p>
+                    </div>
+                    <div class="catalog-card" data-group="special">
+                        <div class="card-header">
+                            <h4 class="plate-title">Truffle Mushroom Fettuccine</h4>
+                            <span class="plate-price">$24</span>
+                        </div>
+                        <p class="plate-desc">Wild mushrooms, black truffle paste, parmigiano cream sauce</p>
+                    </div>
+                    <div class="catalog-card" data-group="classic">
+                        <div class="card-header">
+                            <h4 class="plate-title">Penne All'Arrabbiata</h4>
+                            <span class="plate-price">$16</span>
+                        </div>
+                        <p class="plate-desc">Spicy tomato sauce, garlic, fresh chili, infused olive oil</p>
+                    </div>
+                    <div class="catalog-card" data-group="special">
+                        <div class="card-header">
+                            <h4 class="plate-title">Seafood Linguine</h4>
+                            <span class="plate-price">$28</span>
+                        </div>
+                        <p class="plate-desc">Fresh prawns, wild mussels, calamari, white wine reduction</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="scroll-trigger-view context-dark">
+            <div class="container layout-split">
+                <div class="column-text">
+                    <h2 class="section-headline">Find Us</h2>
+                    <h3 class="sub-headline">Reservation & Info</h3>
+                    
+                    <div class="meta-info-list">
+                        <div class="meta-item">
+                            <div class="icon-bubble"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="meta-body">
+                                <h5>Location</h5>
+                                <p>123 Italia Avenue, Food District</p>
+                            </div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="icon-bubble"><i class="fa-solid fa-phone"></i></div>
+                            <div class="meta-body">
+                                <h5>Phone</h5>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="icon-bubble"><i class="fa-solid fa-clock"></i></div>
+                            <div class="meta-body">
+                                <h5>Open Hours</h5>
+                                <p>Mon - Sun: 12:00 PM - 11:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column-media">
+                    <form class="booking-form" onsubmit="event.preventDefault();">
+                        <div class="field-control">
+                            <input type="text" placeholder="Your Name" autocomplete="off" required>
+                        </div>
+                        <div class="field-control">
+                            <input type="email" placeholder="Your Email" autocomplete="off" required>
+                        </div>
+                        <div class="field-control">
+                            <textarea rows="4" placeholder="Your Message / Reservation Details" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-action-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p class="copyright-text">&copy; 2026 Bella Pasta Kitchen. Handcrafted with passion.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
