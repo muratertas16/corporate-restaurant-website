@@ -1,1 +1,1 @@
-# corporate-restaurant-website
+# This is a project I undertook to see how quickly I could build a modern website from scratch using artificial intelligence. I generated the code framework with AI, and then completed it myself by fixing bugs and configuring responsive (mobile) settings.
